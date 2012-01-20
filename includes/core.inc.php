@@ -28,7 +28,7 @@ $_SESSION['messages'] = isset_or($_SESSION['messages'], array('error' => array()
  * @todo Remove devel settings.
  */
 mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);
-mysql_select_db('tienda1');
+mysql_select_db(DB_NAME);
 
 /**
  * Set character encoding and locale database settings.
