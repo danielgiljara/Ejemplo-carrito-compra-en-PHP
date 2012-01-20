@@ -62,7 +62,7 @@ function cart_submit($values) {
     $body = theme_order_mail($_SESSION['cart'], $values);
 
     // Mail to different recipients.
-    $admin_mail = 'tecnico@nivelz.com';
+    $admin_mail = 'admin@example.com';
     foreach (array($admin_mail, $values['customer-email']) as $email) {
       cart_mail($subject, $body, $email);
     }
@@ -108,7 +108,7 @@ function cart_update($quantities) {
 /**
  * Send a HTML e-mail.
  */
-function cart_mail($subject, $text, $to, $cc = NULL, $bcc = NULL, $from = 'Tienda 1 Nivel Z', $from_email = 'tienda1@nivelz.com') {
+function cart_mail($subject, $text, $to, $cc = NULL, $bcc = NULL, $from = 'My Shop Example', $from_email = 'shop@example.com') {
   // To send HTML mail, you can set the Content-type header.
   $headers = "MIME-Version: 1.0\r\n";
   $headers .= "Content-type: text/html; charset=utf-8\r\n"; 	
