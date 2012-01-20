@@ -1,0 +1,177 @@
+/**
+ * CSS style for cart example.
+ *
+ * @author Daniel Gil Jara (danielgiljara@gmail.com)
+ */
+
+/**
+ * Layout structure.
+ */
+#header {
+  height: 80px;
+}
+#wrapper, #sidebar-first, #sidebar-second {
+  float: left;
+}
+#sidebar-first, #sidebar-second {
+  width: 190px;
+}
+#wrapper {
+  width: 100%;
+}
+#content {
+  margin: 0 210px 0 210px;
+}
+#sidebar-first {
+  margin-left: -100%;
+}
+#sidebar-second {
+  margin-left: -200px;
+}
+#footer {
+  clear: left;
+  font-size: 0.6em;
+  text-align: right;
+  width: 100%;
+}
+
+/**
+ * Messages.
+ */
+#messages div {
+  padding: 10px;
+}
+#messages .info {
+  border: 1px solid blue;
+}
+#messages .status {
+  border: 1px solid green;
+}
+#messages .error {
+  border: 1px solid red;
+}
+
+/**
+ * Menu.
+ */
+li.active a {
+  font-weight: bold;
+}
+img.category-image-tiny {
+  width: 24px;
+}
+img.category-image-tiny {
+  max-height: 120px;
+}
+
+/**
+ * Products grid.
+ */
+ul.products {
+  margin: 0;
+  padding: 0;
+}
+ul.products li {
+  background: none repeat scroll 0 0 transparent;
+  border: 1px dotted;
+  display: inline-block;
+  font-size: 0.7em;
+  list-style-type: none;
+  margin: 5px;
+  min-height: 22em;
+  overflow: hidden;
+  padding: 10px;
+  vertical-align: top;
+  width: 150px;
+}
+ul.products li.new {
+  background: yellow;
+}
+ul.products li img {
+  height: 80px;
+}
+
+/**
+ * Cart.
+ */
+table.cart {
+  font-size: 0.8em;
+}
+table.cart td {
+  vertical-align: top;
+}
+table.cart td.quantity {
+  width: 10px;
+}
+table.cart td.price {
+  text-align: right;
+}
+table.cart td.total span.price {
+  float: right;
+}
+table.cart td.total.total-price span.price {
+  font-weight: bold;
+}
+
+/**
+ * Checkout page.
+ */
+table.order {
+  width: 100%;
+}
+table.order td {
+  border: 1px dotted;
+  padding: 10px;
+}
+table.order td.quantity {
+  width: 50px;
+}
+table.order td.quantity input {
+  width: 30px;
+}
+table.order td.preview img {
+  width: 50px;
+}
+
+/**
+ * Product page.
+ */
+span.price {
+  font-size: 1.2em;
+}
+img.thumbnail {
+  max-width: 240px;
+}
+
+/**
+ * Other styles.
+ */
+h1, h2, ul {
+  margin: 0;
+  margin-bottom: 0.2em;
+}
+a {
+  text-decoration: none;
+}
+textarea {
+  width: 200px
+}
+
+/**
+ * IE7 hacks.
+ */
+html > body ul.products li {
+  *display: inline;
+  *zoom: 1;
+}
+a img {
+  *border: 0;
+}
+
+/**
+ * IE4-6 (excluding MacIE5) hacks.
+ */
+* html ul.products li {
+  display: inline;
+  zoom: 1;
+}
